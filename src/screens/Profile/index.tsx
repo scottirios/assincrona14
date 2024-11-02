@@ -1,6 +1,7 @@
 import { useRoute } from "@react-navigation/native";
 import { Container, TextName } from "../Profile/styles";
-import { Text } from "react-native";
+import scotti from "../../assets/file.png";
+import { Image } from "react-native";
 
 export function Profile() {
   type RouteParams = {
@@ -13,7 +14,8 @@ export function Profile() {
 
   return (
     <Container>
-      <TextName>{name}</TextName>
+      <TextName> Bem vindo {name}!</TextName>
+      <Image source={scotti}></Image>
     </Container>
   );
 }

@@ -40,7 +40,5 @@ export const PasswordRecovery = styled.View`
   top: 60px;
   width: 350px;
   flex-direction: row;
-  margin-left: 20px;
-  margin-right: 20px;
   justify-content: space-between;
 `;
