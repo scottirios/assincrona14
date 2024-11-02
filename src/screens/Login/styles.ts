@@ -8,6 +8,8 @@ export const Container = styled.View`
 export const ContainerLogin = styled.View`
   align-items: center;
   justify-content: center;
+  padding-left: 40px;
+  padding-right: 40px;
   top: 300px;
 `;
 
@@ -17,18 +19,18 @@ export const Title = styled.Text`
 `;
 
 export const InputUser = styled.TextInput`
+  width: 100%;
   background-color: lightseagreen;
   border-radius: 12px;
-  width: 350px;
   top: 20px;
   height: 40px;
   font-weight: bold;
 `;
 
 export const PasswordUser = styled.TextInput`
+  width: 100%;
   background-color: lightseagreen;
   border-radius: 12px;
-  width: 350px;
   top: 40px;
   height: 40px;
   font-weight: bold;

@@ -1,9 +1,19 @@
-import { Container } from "../Profile/styles";
+import { useRoute } from "@react-navigation/native";
+import { Container, TextName } from "../Profile/styles";
+import { Text } from "react-native";
 
-export function Profile(){
-    return (
-        <Container>
+export function Profile() {
+  type RouteParams = {
+    name: string;
+  };
 
-        </Container>
-    )
+  const route = useRoute();
+
+  const { name } = route.params as RouteParams;
+
+  return (
+    <Container>
+      <TextName>{name}</TextName>
+    </Container>
+  );
 }

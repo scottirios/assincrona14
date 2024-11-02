@@ -8,12 +8,15 @@ import {
   PasswordRecovery,
 } from "./styles";
 import { useNavigation } from "@react-navigation/native";
+import { useState } from "react";
 
 export function Login() {
+  const [name, setName] = useState<string>("");
+
   const navigation = useNavigation();
 
   function handleProfile() {
-    navigation.navigate("profile");
+    navigation.navigate("profile", { name });
   }
 
   return (
@@ -21,7 +24,8 @@ export function Login() {
       <ContainerLogin>
         <Title>Login</Title>
         <InputUser
-          placeholder="Informe seu email"
+          placeholder="Informe seu login"
+          onChangeText={setName}
           textAlign="center"
           placeholderTextColor={"white"}
         ></InputUser>
