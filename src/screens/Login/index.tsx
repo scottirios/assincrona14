@@ -7,8 +7,15 @@ import {
   PasswordUser,
   PasswordRecovery,
 } from "./styles";
+import { useNavigation } from "@react-navigation/native";
 
 export function Login() {
+  const navigation = useNavigation();
+
+  function handleProfile() {
+    navigation.navigate("profile");
+  }
+
   return (
     <Container>
       <ContainerLogin>
@@ -24,8 +31,8 @@ export function Login() {
           placeholderTextColor={"white"}
         ></PasswordUser>
         <PasswordRecovery>
-            <Button title="Entrar" />
-            <Button title="Esqueci minha senha"/>
+          <Button title="Entrar" onPress={handleProfile} />
+          <Button title="Esqueci minha senha" />
         </PasswordRecovery>
       </ContainerLogin>
     </Container>
