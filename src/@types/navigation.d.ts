@@ -5,6 +5,9 @@ export declare global {
       profile: {
         name: string;
       };
+      tabRoutes: {
+        name: string;
+      };
     }
   }
 }

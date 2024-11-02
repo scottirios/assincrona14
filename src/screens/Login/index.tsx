@@ -16,7 +16,7 @@ export function Login() {
   const navigation = useNavigation();
 
   function handleProfile() {
-    navigation.navigate("profile", { name });
+    navigation.navigate("tabRoutes", { name });
   }
 
   return (
@@ -24,13 +24,13 @@ export function Login() {
       <ContainerLogin>
         <Title>Login</Title>
         <InputUser
-          placeholder="Informe seu login"
+          placeholder="Informe seu usuário"
           onChangeText={setName}
           textAlign="center"
           placeholderTextColor={"white"}
         ></InputUser>
         <PasswordUser
-          placeholder="Informe sua senha"
+          placeholder="Senha: ********"
           textAlign="center"
           placeholderTextColor={"white"}
         ></PasswordUser>

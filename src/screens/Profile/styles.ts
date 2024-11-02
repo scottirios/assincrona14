@@ -13,8 +13,8 @@ export const ContainerTab = styled.View`
   align-items: center;
 `;
 
-export const TextName = styled.Text`
-  color: black;
+export const Title = styled.Text`
   font-size: 22px;
+  color: white;
   font-weight: bold;
 `;
