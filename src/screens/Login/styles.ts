@@ -20,6 +20,7 @@ export const Title = styled.Text`
 
 export const InputUser = styled.TextInput`
   width: 100%;
+  color: white;
   background-color: lightseagreen;
   border-radius: 12px;
   top: 20px;
