@@ -7,7 +7,7 @@ export const Container = styled.View`
   padding: 80px;
 `;
 
-export const TextHistory = styled.View`
+export const TextSettings = styled.View`
   color: black;
   font-size: 22px;
   font-weight: bold;
